@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- sets title displayed in tab head -->
+	<title>Register</title>
+	<!-- links the stylesheet to the HTML document -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: lightblue;">
+    
+	<div class="info">
+		<img src="images/logo.jpg" alt="Logo" width="50px" height="50px">
+        <span class="Title"><b>Starline Books</b></span>
+    </div>
+	<!-- Horizontal Navigation Bar -->
+	<nav class="navigation-bar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="books.html">Books</a></li>
+			<li><a href="about.html">About Us</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+		</ul>
+    </nav>
+    <section>
+    <div class="box">
+    <form class="register-form">
+        <h2>Register for a New Account</h2>
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" name="fname" placeholder="Your First Name" required><br>
+        <label for="lname">Last Name *</label>
+        <input type="text" id="lname" name="lname" placeholder="Your Last Name" required><br>
+        <label for="birthdate">Date of Birth:</label>
+        <input type="Date" id="birthdate" name="Date of Birth" max="2007-12-31"><br>
+        <label for="gender-select">Gender</label>
+        <select name="gender" id="pet-select">
+            <option value="">--Choose a gender--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select><br>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="Email" placeholder="Your Email" required><br>
+        <label for="username">Username *</label>
+        <input type="text" id="username" name="username" placeholder="Username" required><br>
+        <label for="pass">Password (8 characters minimum) *:</label>
+        <input type="password" id="pass" name="password" minlength="8" required placeholder="Password"><br>
+        <input type="checkbox">Subscribe to our newsletter<br>
+        <input class="register-btn" type="submit" value="Register">
+    </form>
+    </div>
+    </section>
+</body>
+</html>
